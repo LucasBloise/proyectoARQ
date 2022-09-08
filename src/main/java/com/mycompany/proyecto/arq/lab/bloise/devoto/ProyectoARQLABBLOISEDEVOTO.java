@@ -1,4 +1,7 @@
 package com.mycompany.proyecto.arq.lab.bloise.devoto;
+import Models.Proceso;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ProyectoARQLABBLOISEDEVOTO {
@@ -8,6 +11,7 @@ public class ProyectoARQLABBLOISEDEVOTO {
         int opcion;
         int tiempoRutinaSistemaOperativo;
         int tiempoRutinaEntradaSalida;
+        List<Proceso> falpopa = new ArrayList<Proceso>();
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese las unidades de tiempo de rutina del sistema operativo");
         tiempoRutinaSistemaOperativo = sc.nextInt();
@@ -17,26 +21,27 @@ public class ProyectoARQLABBLOISEDEVOTO {
         do{
         
             System.out.flush();
-            System.out.println("1) option 1");
-            System.out.println("2) option 2");
-            System.out.println("3) option 3");
-            System.out.println("4) option 4");
-            System.out.println("5) option 5");
+            System.out.println("1) Carga de los procesos");
+            System.out.println("2) Mostrar grafica SJF");
+            System.out.println("3) Mostrar grafica SJF/D");
+            System.out.println("4) Mostrar resultados");
+            System.out.println("5) Salir");
 
             opcion=sc.nextInt();
 
+            
+            
             switch (opcion){
-
                 case 1:
                     System.out.println("Carga de los procesos");
                     break;
 
                 case 2:
-                    System.out.println("Mostrar grafica JSF");
+                    System.out.println("Mostrar grafica SJF");
                     break;
 
                 case 3:
-                    System.out.println("Mostrar grafica JSF/D");
+                    System.out.println("Mostrar grafica SJF/D");
                     break;
 
                 case 4:
