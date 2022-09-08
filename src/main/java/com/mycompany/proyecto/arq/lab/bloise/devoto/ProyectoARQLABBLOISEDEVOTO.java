@@ -13,7 +13,12 @@ public class ProyectoARQLABBLOISEDEVOTO {
 
     public static void main(String[] args) {
         int tiempoRutinaSistemaOperativo;
-        //1
+        int tiempoRutinaEntradaSalida;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese las unidades de tiempo de rutina del sistema operativo");
+        tiempoRutinaSistemaOperativo = sc.nextInt();
+        System.out.println("Ingrese las unidades de tiempo de rutina de entrada y salida");
+        tiempoRutinaEntradaSalida = sc.nextInt();
         //tiempo rutina de sitema operativo leer
         //tiempo entrada salida leer
         //2
