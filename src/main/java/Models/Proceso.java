@@ -23,7 +23,4 @@ public class Proceso {
     public Proceso(int tiempoEjecuccion) {
         this.tiempoEjecuccion = tiempoEjecuccion;
     }
-    
-    
-    
 }
