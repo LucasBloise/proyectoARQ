@@ -28,18 +28,23 @@ public class ProyectoARQLABBLOISEDEVOTO {
             switch (opcion){
 
                 case 1:
+                    System.out.println("Carga de los procesos");
                     break;
 
                 case 2:
+                    System.out.println("Mostrar grafica JSF");
                     break;
 
                 case 3:
+                    System.out.println("Mostrar grafica JSF/D");
                     break;
 
                 case 4:
+                    System.out.println("Mostrar resultados");
                     break;
 
                 case 5:
+                    System.out.println("Salir");
                     break;
             }
         }while(opcion!=5);          
