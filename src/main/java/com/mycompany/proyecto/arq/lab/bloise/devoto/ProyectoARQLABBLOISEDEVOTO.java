@@ -1,17 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.proyecto.arq.lab.bloise.devoto;
 import java.util.Scanner;
-/**
- *
- * @author lucasbloise
- */
+
 public class ProyectoARQLABBLOISEDEVOTO {
 
     public static void main(String[] args) {
+        
+        int opcion;
         int tiempoRutinaSistemaOperativo;
         int tiempoRutinaEntradaSalida;
         Scanner sc = new Scanner(System.in);
@@ -19,16 +13,37 @@ public class ProyectoARQLABBLOISEDEVOTO {
         tiempoRutinaSistemaOperativo = sc.nextInt();
         System.out.println("Ingrese las unidades de tiempo de rutina de entrada y salida");
         tiempoRutinaEntradaSalida = sc.nextInt();
-        //tiempo rutina de sitema operativo leer
-        //tiempo entrada salida leer
-        //2
-        // carga de los procesos de cada uno en tiempo y cantiodad 
-        //simular dos politicas 
-        //fifo y ron robin
-        //
-        //3 elegir sistema
-        // 6 salir 
         
-        System.out.println("Ingrese la cantidad de tiempo que llevara este proceso");
+        do{
+        
+            System.out.flush();
+            System.out.println("1) option 1");
+            System.out.println("2) option 2");
+            System.out.println("3) option 3");
+            System.out.println("4) option 4");
+            System.out.println("5) option 5");
+
+            opcion=sc.nextInt();
+
+            switch (opcion){
+
+                case 1:
+                    break;
+
+                case 2:
+                    break;
+
+                case 3:
+                    break;
+
+                case 4:
+                    break;
+
+                case 5:
+                    break;
+            }
+        }while(opcion!=5);          
     }
+        
+        
 }
