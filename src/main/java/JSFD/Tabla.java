@@ -21,7 +21,7 @@ int turnoEnFila [] = new int[cantidadProcesos];// turnoEnFilaeans turn around ti
 int tiempoEspera[] = new int[cantidadProcesos];  // tiempoEspera means waiting time
 int checkeoCompletado[] = new int[cantidadProcesos];  // checkeoCompletado means it is flag it checks process is completed or not
 int auxRafaga[]= new int[cantidadProcesos];   // it is also stores brust time
-    int i, st=0, tot=0;
+    int i, tiempoSistema=0, total=0;
     float promedioTiempoEspera=0, promedioLlegada=0;
  
     for (i=0;i<cantidadProcesos;i++)
@@ -37,12 +37,12 @@ int auxRafaga[]= new int[cantidadProcesos];   // it is also stores brust time
     
     while(true){
      int min=99,c=cantidadProcesos;
-     if (tot==cantidadProcesos)
+     if (total==cantidadProcesos)
      break;
     
-     for ( i=0;i<cantidadProcesos;i++)
+     for(i=0;i<cantidadProcesos;i++)
      {
-     if ((llegada[i]<=st) && (checkeoCompletado[i]==0) && (duracion[i]<min))
+     if ((llegada[i]<=tiempoSistema) && (checkeoCompletado[i]==0) && (duracion[i]<min))
      {
      min=duracion[i];
      c=i;
@@ -50,16 +50,16 @@ int auxRafaga[]= new int[cantidadProcesos];   // it is also stores brust time
      }
     
      if (c==cantidadProcesos)
-     st++;
+     tiempoSistema++;
      else
      {
      duracion[c]--;
-     st++;
+     tiempoSistema++;
      if (duracion[c]==0)
      {
-     tiempoFinalizar[c]= st;
+     tiempoFinalizar[c]= tiempoSistema;
      checkeoCompletado[c]=1;
-     tot++;
+     total++;
      }
      }
     }
