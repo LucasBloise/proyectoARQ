@@ -5,7 +5,7 @@
 package JSFD;
 
 
-    import java.util.*;
+import java.util.*;
 public class Tabla {
  
 public static void init(){

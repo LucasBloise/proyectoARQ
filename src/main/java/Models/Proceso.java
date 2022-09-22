@@ -8,9 +8,14 @@ package Models;
  *
  * @author lucasbloise
  */
+
 public class Proceso {
     
-    private int tiempoEjecuccion;
+  
+    
+     int tiempoEjecuccion;
+     int tiempoLlegada;
+    
 
     public int getTiempoEjecuccion() {
         return tiempoEjecuccion;
@@ -19,8 +24,18 @@ public class Proceso {
     public void setTiempoEjecuccion(int tiempoEjecuccion) {
         this.tiempoEjecuccion = tiempoEjecuccion;
     }
-
-    public Proceso(int tiempoEjecuccion) {
-        this.tiempoEjecuccion = tiempoEjecuccion;
+    
+    public int getTiempoLlegada(){
+        return tiempoLlegada;
     }
+    
+    public void setTiempoLlegada(int tiempoLlegada){
+        this.tiempoLlegada = tiempoLlegada;
+    }
+
+    public Proceso(int tiempoEjecuccion, int tiempoLlegada) {
+        this.tiempoEjecuccion = tiempoEjecuccion;
+        this.tiempoLlegada = tiempoLlegada;
+    }
+    
 }
